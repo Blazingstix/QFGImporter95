@@ -1,0 +1,83 @@
+[Version]
+Version=2.5.0.1493
+
+[COMDLG32.OCX <0009>]
+Register=$(DLLSelfRegister)
+Dest=$(WinSysPath)
+Date=7/19/1997
+Time=16:00:32
+Version=5.1.43.19
+CABFilename=ComDlg32.cab
+CABDefaultURL=http://activex.microsoft.com/controls/vb5
+CABINFFile=ComDlg32.inf
+CABRunFile=
+Uses1=
+
+[QFGIMP.EXE <0009>]
+Register=
+Dest=$(AppPath)
+Date=7/20/2003
+Time=23:18:08
+Version=2.5.0.1493
+CABFilename=; If you are going to compress this file into a Cabinet (.cab) file, you should add the name of that file here.
+CABDefaultURL=; If you specified a CABFileName, then you can put URL location here, where Internet users can locate your Cabinet file for download.
+CABINFFile=; If you specified a CABFileName that processes an INF file, you should put the name of the inf file contained in that Cabinet file, here.  This is ignored if a Run= key is also present
+CABRunFile=; If you specified a CABFileName that processes an EXE file, you should put the name of the exe file contained in that Cabinet file, here.  This takes precedence over the InfFile= key
+Uses1=COMDLG32.OCX
+Uses2=QfgImp.DEP
+Uses3=ARIAL.TTF
+Uses4=OLDENG.TTF
+Uses5=ReadMe.txt
+Uses6=
+
+[QFGIMP.DEP <0009>]
+Register=
+Dest=$(AppPath)
+Date=7/20/2003
+Time=23:34:18
+Version=2.5.0.1493
+CABFilename=
+CABDefaultURL=
+CABINFFile=
+CABRunFile=
+Uses1=
+
+[ARIAL.TTF <0009>]
+Register=
+Dest=$(WinPath)\Fonts
+Date=8/24/1996
+Time=11:11:10
+Version=
+CABFilename=
+CABDefaultURL=
+CABINFFile=
+CABRunFile=
+Uses1=
+
+[OLDENG.TTF <0009>]
+Register=
+Dest=$(WinPath)\Fonts
+Date=7/20/1993
+Time=9:00:00
+Version=
+CABFilename=
+CABDefaultURL=
+CABINFFile=
+CABRunFile=
+Uses1=
+
+[README.TXT <0009>]
+Register=
+Dest=$(AppPath)
+Date=7/20/2003
+Time=23:27:46
+Version=
+CABFilename=
+CABDefaultURL=
+CABINFFile=
+CABRunFile=
+Uses1=
+
+
+
+

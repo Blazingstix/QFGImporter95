@@ -1,0 +1,58 @@
+[Setup Wizard Template]
+TemplateDate=20/07/2003 11:32:07 PM
+
+[Select Project and Options]
+txtProjFile=C:\Charles\VB Documents\NewQFG\QfgImp.Vbp
+chkProjRebuild=0
+optBldSetup=True
+chkIncludeDEP=1
+optInternet=False
+optDEPOnly=False
+
+[Distribution Method]
+optFloppyTarg=False
+optSingleDirTarg=False
+optMultDirTarg=True
+
+[Multiple Directories]
+cboFloppyDrives=0
+cboFloppyDriveSize=0
+txtDirTarget=C:\Charles\QfgImp\
+
+[Internet Package]
+optRemoteSite=True
+optLocalSite=False
+txtLocalSite=
+
+[Data Access]
+chkUseJet=1
+chkUseODBC=0
+Isam0=
+
+[ActiveX Server Components]
+File1=
+
+[Confirm Dependencies]
+File1="C:\WINDOWS\SYSTEM\COMDLG32.OCX",True,32764
+File2=
+
+[Shared ActiveX Application]
+optDeployApplication=True
+optDeployShared=False
+optRemoteServer1=True
+optRemoteServer0=False
+
+[File Summary]
+File1="C:\WINDOWS\SYSTEM\MSVBVM50.dll",False,"$(WinSysPathSysFile)",$(DLLSelfRegister),False
+File2="C:\Program Files\DevStudio\VB\SETUPKIT\KITFIL32\SYS32\StdOle2.tlb",False,"$(WinSysPathSysFile)",$(TLBRegister),False
+File3="C:\Program Files\DevStudio\VB\SETUPKIT\KITFIL32\SYS32\OleAut32.dll",False,"$(WinSysPathSysFile)",$(DLLSelfRegister),False
+File4="C:\Program Files\DevStudio\VB\SETUPKIT\KITFIL32\SYS32\OlePro32.dll",False,"$(WinSysPathSysFile)",$(DLLSelfRegister),False
+File5="C:\Program Files\DevStudio\VB\SETUPKIT\KITFIL32\SYS32\AsycFilt.dll",False,"$(WinSysPathSysFile)",,False
+File6="C:\Program Files\DevStudio\VB\SETUPKIT\KITFIL32\SYS32\Ctl3d32.dll",False,"$(WinSysPathSysFile)",,False
+File7="C:\Program Files\DevStudio\VB\SETUPKIT\KITFIL32\SYS32\ComCat.dll",False,"$(WinSysPathSysFile)",$(DLLSelfRegister),False
+File8="C:\WINDOWS\SYSTEM\COMDLG32.OCX",True,"$(WinSysPath)",$(DLLSelfRegister),True
+File9="C:\Charles\VB Documents\NewQFG\QfgImp.exe",True,"$(AppPath)",,False
+File10="C:\Charles\VB Documents\NewQFG\QfgImp.DEP",True,"$(AppPath)",,False
+File11="C:\Windows\FONTS\ARIAL.TTF",True,"$(WinPath)\Fonts",,True
+File12="C:\Windows\FONTS\OLDENG.TTF",True,"$(WinPath)\Fonts",,True
+File13="C:\Charles\VB Documents\NewQFG\ReadMe.txt",True,"$(AppPath)",,False

@@ -1,0 +1,75 @@
+A (Not So) Brief Note
+
+This tool with the unwieldy name (Quest For Glory Character Importer '95) was 
+something I had started writing when I was a young kid of 16, all because of 
+my love for the Quest for Glory series. A the time, I had pretended to be a 
+small part of a larger corporation -- who knows why, now -- when it was just me.
+Looking back, I'm pretty sure it was painfully obvious I was just a lone kid.
+
+The source code provided here was written in Visual Basic 5.0, but I have 
+recently compiled it with Visual Basic 6.0, and I believe there are tools that 
+will help you to convert older VB code into VB.NET 2010 or later. (I know earlier
+versions of Visual Studio.net could do such upgrades automatically, even if they
+weren't perfect.)
+
+Those of you looking for secrets on decoding the file format of the QFG character
+imports will be sorely disappointed. I originally never bothered/intended to 
+decipher the algorithm nor allow arbitrary stats editing. I took a very low-tech 
+approach, by simply finishing each game with each character (using debug codes, 
+and trainer programs) and storing the resulting SAV file's contents as string 
+variables, to be recalled with the click of a button. The saved character's name 
+is easy to edit, as it is in plain-text and in a predictable location in every 
+SAV file (it's the 1st line for QFG1 and QFG2, and the 2nd for QFG3 and QFG4).
+
+The idea for it first came to me way back when the 720k floppy disk, that I kept 
+all my saved characters on, started going bad. I was just going to grab a new 
+diskette, when I thought how much better it would be if I had a program that
+could spit out the saved characters on command. "Better" may have just been 
+my excuse to learn programming. When I quickly saw how easily it would be to 
+replace the saved character's name, I thought others might also enjoy access to 
+the repository I had created. And so I put it online.  I did try a text-based 
+program first, written in QBASIC.. or maybe QuickBASIC, but I really do think
+that a graphical interface can be much more pleasing and easier to use, on the
+whole.
+
+Ironically, I did later attempt to include the algorithm in a later version. I 
+found a decompiled copy of the script from QFG1EGA online somewhere (I don't 
+remember where, but it was probably somehow related to SCI Studio), also relying 
+on my extensive (at the time) knowledge of the RAZZLE DAZZLE ROOT BEER debug codes 
+and item/stat numbers.  Unfortunately, a HDD crash caused me to lose any progress 
+I'd made on that front, and when I tried to find the decompiled script online again
+I came up empty. That put enough of a damper on my enthusiasm that I didn't try
+again. 
+
+I did learn some very interesting things about the import saves though, such
+as the fact that event flags from the game are saved right along with inventory 
+and stats. For instance, a QFG1 import save records if you used turned Baba Yaga 
+into a frog, or if you used the dispel potion on Elsa. Clearly that concept was 
+abandoned, and I don't know if each subsequent game even passes along any of that 
+info or not, but can you imagine how different the series could have been if it had? 
+Imagine QFG4 if you never scared Baba Yaga away from Spielburg, or QFG5 if you never
+freed Elsa from the brigands?
+
+The version of the source code is v2.05.1973 which I had never actually released. 
+There are enough changes between this and v2.05.1493 -- the last publicly released 
+version -- that I really should have called it v2.06 at *least*. But, hey, if I had
+to do it over again today, there'd be a lot of things I'd change. The whole thing was 
+a valuable learning experience for me.  The two biggest changes are the addition of 
+a "Perfect Characters" checkbox, and an "Importing Into Quest For Glory V" checkbox.
+All the QFG5 checkbox was default to long filenames, since QFG5 wasn't limited to the
+old DOS 8.3 filename format that QFG1-4 were. The "Perfect Characters" is a bit more
+interesting, but again there's nothing magical about it. For QFG1 and QFG2 I had 
+started to gather a set of characters that had max for *all* stats, and not just the 
+base class stats. I wanted to get the eight remaining saves for QFG3 and QFG4, but
+real life got in the way, and it the source stayed as it lay, gathering dust.
+
+Which brings me to why I'm releasing the source code. I've had my fun building it,
+and I'm amazed to see that (a few) other people actually use this, too. It's a really
+cool feeling that other people are enjoying (or at least making use of) something 
+that *I* wrote. Even if that something is a silly little cheat for (or compliment to?)
+a few obscure old computer games.  Maybe seeing this code could inspire somebody else 
+to have fun building something and get to experience that cool feeling when someone
+uses *their* work.
+
+- Charles
+January 30, 2013
